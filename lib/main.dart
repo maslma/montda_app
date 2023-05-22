@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:montada_app/lec3/home_screen.dart';
-import 'package:montada_app/login.dart';
-import 'package:montada_app/my_goals_screen.dart';
+import 'package:flutter/services.dart';
+import 'package:montada_app/task2/task2.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +13,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Montda App',
-      home: HomeScreen(),
+      home: AnnotatedRegion<SystemUiOverlayStyle>(
+        value: SystemUiOverlayStyle.light.copyWith(
+          statusBarColor: Colors.transparent,
+        ),
+        child: const TaskScreen(),
+      ),
     );
   }
 }

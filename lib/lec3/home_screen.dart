@@ -15,14 +15,6 @@ class HomeScreen extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.teal,
-        leading: Container(
-          width: 10,
-          height: 10,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.black,
-          ),
-        ),
       ),
       endDrawer: Drawer(),
       body: SafeArea(
