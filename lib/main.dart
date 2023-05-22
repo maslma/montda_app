@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:montada_app/lec3/home_screen.dart';
 import 'package:montada_app/login.dart';
 import 'package:montada_app/my_goals_screen.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return  const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Montda App',
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
 }

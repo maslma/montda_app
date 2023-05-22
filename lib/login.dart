@@ -11,83 +11,84 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-             Container(
+            Container(
               height: 430,
               decoration: const BoxDecoration(
                 borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(45), bottomRight: Radius.circular(45)),
+                    bottomLeft: Radius.circular(45),
+                    bottomRight: Radius.circular(45)),
                 image: DecorationImage(
-                    image:AssetImage("assets/images/login2.png"),
-                    fit: BoxFit.fill
-                ),
+                    image: AssetImage("assets/images/login2.png"),
+                    fit: BoxFit.fill),
               ),
             ),
-             const Padding(
-               padding:  EdgeInsets.symmetric(horizontal: 70,vertical: 30),
-               child:  Text(
-                 "Login",
-                 style: TextStyle(fontSize: 40, color: Colors.indigo,fontWeight: FontWeight.bold),
-               ),
-             ),
-             Container(
-               height: 50,
-               padding: const EdgeInsets.symmetric(horizontal: 50),
-               child: TextFormField(
-                 style: const TextStyle(color: Colors.grey, fontSize: 18),
-                 keyboardType: TextInputType.emailAddress,
-                 decoration: InputDecoration(
-                     label:  Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                       child: Text(
-                         "Username",
-                         style: TextStyle(color: Colors.grey[600]),
-                       ),
-                     ),
-                     hintStyle: TextStyle(color: Colors.grey),
-                     border: OutlineInputBorder(
-                       borderRadius: BorderRadius.circular(30),
-                       borderSide: BorderSide(color: Colors.white),
-                     ),
-                   focusedBorder: OutlineInputBorder(
-                     borderRadius: BorderRadius.circular(30),
-                     borderSide:  BorderSide(
-                       color: Colors.indigo,
-                     ),
-                   ),
-                 )
-               ),
-             ),
-             const SizedBox(
-               height: 15,
-             ),
-             Container(
-               height: 50,
-               padding: const EdgeInsets.symmetric(horizontal: 50),
-               child: TextFormField(
-                   style: const TextStyle(color: Colors.grey, fontSize: 18),
-                   keyboardType: TextInputType.emailAddress,
-                   decoration: InputDecoration(
-                     label:  Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 15),
-                       child: Text(
-                         "Password",
-                         style: TextStyle(color: Colors.grey[600]),
-                       ),
-                     ),
-                     hintStyle: TextStyle(color: Colors.grey),
-                     border: OutlineInputBorder(
-                       borderRadius: BorderRadius.circular(30),
-                       borderSide: BorderSide(color: Colors.white),
-                     ),
-                     focusedBorder: OutlineInputBorder(
-                       borderRadius: BorderRadius.circular(30),
-                       borderSide:  BorderSide(
-                         color: Colors.indigo,
-                       ),
-                     ),
-                   )
-               ),
-             ),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 70, vertical: 30),
+              child: Text(
+                "Login",
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Colors.indigo,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+            Container(
+              height: 50,
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: TextFormField(
+                  style: const TextStyle(color: Colors.grey, fontSize: 18),
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    label: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
+                      child: Text(
+                        "Username",
+                        style: TextStyle(color: Colors.grey[600]),
+                      ),
+                    ),
+                    hintStyle: TextStyle(color: Colors.grey),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(color: Colors.white),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color: Colors.indigo,
+                      ),
+                    ),
+                  )),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            Container(
+              height: 50,
+              padding: const EdgeInsets.symmetric(horizontal: 50),
+              child: TextFormField(
+                  style: const TextStyle(color: Colors.grey, fontSize: 18),
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    label: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 15),
+                      child: Text(
+                        "Password",
+                        style: TextStyle(color: Colors.grey[600]),
+                      ),
+                    ),
+                    hintStyle: TextStyle(color: Colors.grey),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(color: Colors.white),
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color: Colors.indigo,
+                      ),
+                    ),
+                  )),
+            ),
             const SizedBox(
               height: 20,
             ),
@@ -99,7 +100,7 @@ class LoginScreen extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30)),
-                      backgroundColor:  Colors.indigo),
+                      backgroundColor: Colors.indigo),
                   onPressed: () {},
                   child: const Text(
                     "Sign In",
